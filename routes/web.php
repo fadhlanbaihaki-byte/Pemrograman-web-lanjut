@@ -1,22 +1,18 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\AboutController;
-use App\Http\Controllers\ContactController;
-use App\Http\Controllers\HomeController;
-use App\Http\Controllers\ProductController;
 
-Route::get('/', [HomeController::class, 'index'])
-    ->name('home');
+/*
+|--------------------------------------------------------------------------
+| Web Routes
+|--------------------------------------------------------------------------
+|
+| Here is where you can register web routes for your application. These
+| routes are loaded by the RouteServiceProvider and all of them will
+| be assigned to the "web" middleware group. Make something great!
+|
+*/
 
-Route::get('/tentang-kami', [AboutController::class, 'index'])
-    ->name('about');
-
-Route::get('/products', [ProductController::class, 'index'])
-    ->name('products.index');
-
-Route::get('/products/{slug}', [ProductController::class, 'show'])
-    ->name('products.show');
-
-Route::get('/kontak', [ContactController::class, 'index'])
-    ->name('contact');
+Route::get('/', function () {
+    return view('welcome');
+});
