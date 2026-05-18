@@ -1,45 +1,27 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider and all of them will
-| be assigned to the "web" middleware group. Make something great!
-|
-*/
-
-
-
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\AboutController;
+use App\Http\Controllers\ProductController;
+use App\Http\Controllers\ContactController;
 
 // Halaman Beranda
-Route::get('/', function () {
-    return view('pages.home');
-})->name('home');
+Route::get('/', [HomeController::class, 'index'])
+    ->name('home');
 
 // Halaman Tentang Kami
-Route::get('/tentang', function () {
-    return view('pages.tentang');
-})->name('tentang');
+Route::get('/tentang', [AboutController::class, 'index'])
+    ->name('tentang');
 
 // Halaman Daftar Produk
-Route::get('/produk', function () {
-    return view('pages.produk');
-})->name('produk');
+Route::get('/produk', [ProductController::class, 'index'])
+    ->name('produk');
 
 // Halaman Detail Produk
-// Dalam implementasi nyata, $slug digunakan untuk query database
-Route::get('/produk/{slug}', function (string $slug) {
-    // Contoh: $produk = Produk::where('slug', $slug)->firstOrFail();
-    // return view('pages.produk-detail', compact('produk'));
-    return view('pages.produk-detail');
-})->name('produk.detail');
+Route::get('/produk/{slug}', [ProductController::class, 'show'])
+    ->name('produk.detail');
 
 // Halaman Kontak
-Route::get('/kontak', function () {
-    return view('pages.kontak');
-})->name('kontak');
+Route::get('/kontak', [ContactController::class, 'index'])
+    ->name('kontak');
