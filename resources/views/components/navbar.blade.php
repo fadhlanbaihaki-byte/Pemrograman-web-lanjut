@@ -128,7 +128,7 @@
             </div>
             <div>
                 <span>UD Indo Gummi</span>
-                <span class="brand-sub">Icikiwir aselole </span>
+                <span class="brand-sub">Mitra Karet Industri Anda</span>
             </div>
         </a>
 

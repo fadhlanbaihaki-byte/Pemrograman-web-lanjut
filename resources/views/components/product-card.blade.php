@@ -214,7 +214,7 @@
             <a href="{{ url('/produk/' . ($product['slug'] ?? '1')) }}" class="btn-detail">
                 <i class="bi bi-info-circle"></i> Detail
             </a>
-            <a href="https://wa.me/6281234567890?text=Halo%20Dapur%20Ayu,%20saya%20ingin%20memesan%20*{{ urlencode($product['name'] ?? 'produk') }}*"
+            <a href="https://wa.me/6281234567890?text=Halo%20Indo%20Gummi,%20saya%20ingin%20memesan%20*{{ urlencode($product['name'] ?? 'produk') }}*"
                class="btn-wa-sm" target="_blank">
                 <i class="bi bi-whatsapp"></i> Pesan
             </a>

@@ -1,12 +1,5 @@
-{{-- ============================================
-     PAGE: Home / Beranda
-     File: resources/views/pages/home.blade.php
-============================================ --}}
-
 @extends('layouts.app')
-
 @section('title', 'Indo Gummi - Industri Produk Karet Berkualitas')
-
 @section('content')
 
     {{-- ===== HERO SECTION ===== --}}

@@ -1,13 +1,5 @@
-cat > /home/claude/projek/pages/produk-detail.blade.php << 'ENDOFFILE'
-{{-- ============================================
-     PAGE: Detail Produk
-     File: resources/views/pages/produk-detail.blade.php
-============================================ --}}
-
 @extends('layouts.app')
-
 @section('title', 'Natural Rubber Sheet - Karet Nusantara')
-
 @section('content')
 
     {{-- ===== PAGE HEADER ===== --}}

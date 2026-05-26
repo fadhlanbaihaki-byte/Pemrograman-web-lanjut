@@ -1,45 +1,43 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\AboutController;
+use App\Http\Controllers\ProductController;
+use App\Http\Controllers\ContactController;
+use App\Http\Controllers\Admin\AuthController;
+use App\Http\Controllers\Admin\DashboardController;
+use App\Http\Controllers\Admin\ProductController as AdminProductController;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider and all of them will
-| be assigned to the "web" middleware group. Make something great!
-|
-*/
+// =============================================
+// HALAMAN PUBLIK (GUEST)
+// =============================================
 
+Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::get('/tentang', [AboutController::class, 'index'])->name('tentang');
+Route::get('/produk', [ProductController::class, 'index'])->name('produk');
+Route::get('/produk/{slug}', [ProductController::class, 'show'])->name('produk.detail');
+Route::get('/kontak', [ContactController::class, 'index'])->name('kontak');
 
+// =============================================
+// ADMIN AUTH & PANEL
+// =============================================
 
+Route::prefix('admin')->name('admin.')->group(function () {
 
-// Halaman Beranda
-Route::get('/', function () {
-    return view('pages.home');
-})->name('home');
+    // Login (bisa diakses tanpa login)
+    Route::get('/login', [AuthController::class, 'showLogin'])->name('login');
+    Route::post('/login', [AuthController::class, 'login']);
 
-// Halaman Tentang Kami
-Route::get('/tentang', function () {
-    return view('pages.tentang');
-})->name('tentang');
+    // Protected - harus login dulu
+    Route::middleware('admin')->group(function () {
 
-// Halaman Daftar Produk
-Route::get('/produk', function () {
-    return view('pages.produk');
-})->name('produk');
+        Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 
-// Halaman Detail Produk
-// Dalam implementasi nyata, $slug digunakan untuk query database
-Route::get('/produk/{slug}', function (string $slug) {
-    // Contoh: $produk = Produk::where('slug', $slug)->firstOrFail();
-    // return view('pages.produk-detail', compact('produk'));
-    return view('pages.produk-detail');
-})->name('produk.detail');
+        // Dashboard
+        Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
 
-// Halaman Kontak
-Route::get('/kontak', function () {
-    return view('pages.kontak');
-})->name('kontak');
+        // Products CRUD
+        Route::resource('products', AdminProductController::class)->except(['show']);
+    });
+});

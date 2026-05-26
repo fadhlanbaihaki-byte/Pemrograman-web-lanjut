@@ -1,12 +1,5 @@
-{{-- ============================================
-     PAGE: Tentang Kami
-     File: resources/views/pages/tentang.blade.php
-============================================ --}}
-
 @extends('layouts.app')
-
 @section('title', 'Tentang Kami - Indo Gummi')
-
 @section('content')
 
     {{-- ===== PAGE HEADER ===== --}}

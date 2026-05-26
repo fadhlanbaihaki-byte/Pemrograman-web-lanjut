@@ -233,7 +233,6 @@
                         berkualitas tinggi dengan standar manufaktur modern
                         untuk kebutuhan otomotif, mesin, konstruksi,
                         dan berbagai sektor industri lainnya.
-                        (belum sreg)
                     </p>
 
                     <div class="hero-actions">

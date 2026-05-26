@@ -1,12 +1,5 @@
-{{-- ============================================
-     PAGE: Kontak
-     File: resources/views/pages/kontak.blade.php
-============================================ --}}
-
 @extends('layouts.app')
-
 @section('title', 'Kontak - Indo Gummi')
-
 @section('content')
 
     {{-- ===== PAGE HEADER ===== --}}
