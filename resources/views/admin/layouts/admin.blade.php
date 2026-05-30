@@ -573,6 +573,12 @@
             Produk
         </a>
 
+        <a href="{{ route('admin.categories.index') }}"
+           class="sidebar-link {{ request()->routeIs('admin.categories*') ? 'active' : '' }}">
+            <i class="bi bi-tags-fill"></i>
+            Kategori
+        </a>
+
         <div class="sidebar-section" style="margin-top:10px;">Lihat Website</div>
 
         <a href="{{ route('home') }}" target="_blank" class="sidebar-link">

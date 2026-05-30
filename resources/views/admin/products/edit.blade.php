@@ -169,16 +169,12 @@
                     <i class="bi bi-exclamation-triangle me-2"></i>
                     Zona Berbahaya
                 </h6>
-                <form action="{{ route('admin.products.destroy', $product) }}" method="POST"
-                      onsubmit="return confirm('Apakah Anda yakin ingin menghapus produk ini? Tindakan ini tidak bisa dibatalkan.')">
-                    @csrf
-                    @method('DELETE')
-                    <button type="submit"
-                            style="width:100%;background:#fee2e2;border:1px solid #fecaca;color:#dc2626;padding:9px;border-radius:8px;font-size:13px;font-weight:500;cursor:pointer;transition:all 0.2s;display:flex;align-items:center;justify-content:center;gap:6px;">
-                        <i class="bi bi-trash"></i>
-                        Hapus Produk Ini
-                    </button>
-                </form>
+                <button type="submit" form="deleteProductForm"
+                        onclick="return confirm('Apakah Anda yakin ingin menghapus produk ini? Tindakan ini tidak bisa dibatalkan.')"
+                        style="width:100%;background:#fee2e2;border:1px solid #fecaca;color:#dc2626;padding:9px;border-radius:8px;font-size:13px;font-weight:500;cursor:pointer;transition:all 0.2s;display:flex;align-items:center;justify-content:center;gap:6px;">
+                    <i class="bi bi-trash"></i>
+                    Hapus Produk Ini
+                </button>
             </div>
         </div>
     </div>
@@ -194,6 +190,11 @@
             Perbarui Produk
         </button>
     </div>
+</form>
+
+<form id="deleteProductForm" action="{{ route('admin.products.destroy', $product) }}" method="POST" class="d-none">
+    @csrf
+    @method('DELETE')
 </form>
 
 @endsection
