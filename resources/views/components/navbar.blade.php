@@ -128,7 +128,7 @@
             </div>
             <div>
                 <span>UD Indo Gummi</span>
-                <span class="brand-sub">Icikiwir aselole </span>
+                <span class="brand-sub">Mitra Karet Industri Anda</span>
             </div>
         </a>
 
@@ -159,7 +159,7 @@
                        href="{{ url('/kontak') }}">Kontak</a>
                 </li>
                 <li class="nav-item ms-2">
-                    <a class="nav-cta" href="https://wa.me/...(isi nomor wanya)" target="_blank">
+                    <a class="nav-cta" href="https://wa.me/0818427665" target="_blank">
                         <i class="bi bi-whatsapp"></i>
                         <span>Pesan Sekarang</span>
                     </a>

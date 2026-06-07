@@ -345,7 +345,7 @@
     @include('components.footer')
 
     {{-- WhatsApp Float Button --}}
-    <a href="https://wa.me/6281234567890?text=Halo%20Indo%20Gummi,%20saya%20ingin%20bertanya%20tentang%20produk%20karet"
+    <a href="https://wa.me/0818427665?text=Halo%20Indo%20Gummi,%20saya%20ingin%20bertanya%20tentang%20produk%20karet"
        class="wa-float"
        target="_blank"
        title="Chat WhatsApp">
@@ -390,4 +390,3 @@
 
 </body>
 </html>
-```

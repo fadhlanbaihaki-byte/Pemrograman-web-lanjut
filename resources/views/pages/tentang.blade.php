@@ -1,12 +1,5 @@
-{{-- ============================================
-     PAGE: Tentang Kami
-     File: resources/views/pages/tentang.blade.php
-============================================ --}}
-
 @extends('layouts.app')
-
 @section('title', 'Tentang Kami - Indo Gummi')
-
 @section('content')
 
     {{-- ===== PAGE HEADER ===== --}}
@@ -56,7 +49,7 @@
                             </div>
 
                             <div>
-                                <div class="badge-number">Est. 2015</div>
+                                <
                                 <div class="badge-text">Berpengalaman di Industri</div>
                             </div>
                         </div>
@@ -71,7 +64,7 @@
                                 </div>
 
                                 <div style="font-size:11px; color:var(--color-muted);">
-                                    Mitra Industri Nasional
+                                    Mitra Industri
                                 </div>
                             </div>
                         </div>
@@ -85,67 +78,28 @@
                     <span class="section-label">Siapa Kami</span>
 
                     <h2 class="section-title">
-                        Industri Produk Karet<br>
-                        Berkualitas Tinggi
+                        Usaha Mandiri <br>
+                        Pembuatan Produk Karet Presisi
                     </h2>
 
                     <div class="divider-elegant"></div>
 
                     <p style="font-size:15px; color:var(--color-muted); line-height:1.9; margin-bottom:20px;">
-                        Indo Gummi adalah perusahaan manufaktur produk karet yang
-                        bergerak di bidang produksi dan distribusi berbagai kebutuhan
-                        industri seperti gasket, seal, rubber sheet, dan komponen karet lainnya.
+                        Selamat datang di Indo Gummi. Kami adalah usaha pribadi yang bergerak di bidang pembuatan dan penyediaan 
+                        berbagai macam kebutuhan produk karet. Kami melayani pembuatan serta distribusi perlengkapan teknis 
+                        seperti gasket, seal, rubber sheet, hingga berbagai komponen karet custom lainnya yang disesuaikan dengan kebutuhan Anda.
+
+                    <p style="font-size:15px; color:var(--color-muted); line-height:1.9; margin-bottom:32px;">
+                        Sebagai usaha mandiri, kami berfokus pada pengerjaan yang teliti untuk setiap pesanan yang masuk. 
+                        Karena dikelola secara pribadi, kami bisa memberikan perhatian lebih pada detail produk yang dibuat. 
+                        Kami selalu berusaha menghasilkan produk yang rapi, pas ukurannya, dan sesuai dengan spesifikasi operasional yang Anda gunakan.
                     </p>
 
                     <p style="font-size:15px; color:var(--color-muted); line-height:1.9; margin-bottom:32px;">
-                        Dengan dukungan teknologi modern dan tenaga profesional,
-                        kami berkomitmen menghadirkan produk berkualitas tinggi
-                        yang memenuhi standar industri nasional maupun internasional.
+                        Kami siap menjadi mitra tepercaya untuk membantu memenuhi kebutuhan produk karet Anda, baik untuk keperluan perawatan mesin, bengkel, maupun operasional harian lainnya.
                     </p>
 
-                    {{-- Stats --}}
-                    <div class="row g-3 mb-4">
 
-                        @php
-                        $stats = [
-                            ['number'=>'100+', 'label'=>'Mitra Industri'],
-                            ['number'=>'50+',  'label'=>'Produk Karet'],
-                            ['number'=>'9 Th', 'label'=>'Pengalaman'],
-                            ['number'=>'100%', 'label'=>'Kualitas Teruji'],
-                        ];
-                        @endphp
-
-                        @foreach($stats as $stat)
-                        <div class="col-6">
-
-                            <div style="
-                                background:var(--color-primary-light);
-                                border-radius:var(--radius-md);
-                                padding:16px 20px;
-                            ">
-
-                                <div style="
-                                    font-family:var(--font-display);
-                                    font-size:1.6rem;
-                                    font-weight:600;
-                                    color:var(--color-primary);
-                                ">
-                                    {{ $stat['number'] }}
-                                </div>
-
-                                <div style="
-                                    font-size:12px;
-                                    color:var(--color-muted);
-                                ">
-                                    {{ $stat['label'] }}
-                                </div>
-
-                            </div>
-
-                        </div>
-                        @endforeach
-
-                    </div>
 
                     <a href="{{ url('/kontak') }}" class="btn-primary-custom">
                         <i class="bi bi-telephone-fill"></i>
@@ -157,89 +111,4 @@
             </div>
         </div>
     </section>
-
-
-    {{-- ===== TIMELINE ===== --}}
-    <section class="section-padding">
-        <div class="container">
-
-            <div class="text-center mb-5 fade-up">
-                <span class="section-label">Perjalanan Kami</span>
-                <h2 class="section-title">Sejarah Indo Gummi</h2>
-                <div class="divider-elegant centered"></div>
-            </div>
-
-            @php
-            $timeline = [
-                [
-                    'year'=>'2015',
-                    'title'=>'Perusahaan Berdiri',
-                    'desc'=>'Indo Gummi didirikan sebagai usaha produksi komponen karet untuk kebutuhan industri lokal.'
-                ],
-
-                [
-                    'year'=>'2017',
-                    'title'=>'Ekspansi Produksi',
-                    'desc'=>'Menambah kapasitas produksi dan mulai melayani berbagai sektor manufaktur.'
-                ],
-
-                [
-                    'year'=>'2019',
-                    'title'=>'Teknologi Modern',
-                    'desc'=>'Mengadopsi mesin produksi modern untuk meningkatkan kualitas dan efisiensi.'
-                ],
-
-                [
-                    'year'=>'2021',
-                    'title'=>'Distribusi Nasional',
-                    'desc'=>'Memperluas jaringan distribusi ke berbagai kota besar di Indonesia.'
-                ],
-
-                [
-                    'year'=>'2023',
-                    'title'=>'Produk Industri Baru',
-                    'desc'=>'Mengembangkan produk gasket, seal, dan rubber roll berkualitas premium.'
-                ],
-
-                [
-                    'year'=>'2024',
-                    'title'=>'Mitra Industri Terpercaya',
-                    'desc'=>'Dipercaya oleh banyak perusahaan sebagai supplier produk karet industri.'
-                ],
-            ];
-            @endphp
-
-            <div class="timeline">
-
-                @foreach($timeline as $i => $item)
-
-                <div class="timeline-item {{ $i % 2 === 0 ? 'left' : 'right' }} fade-up">
-
-                    <div class="timeline-dot"></div>
-
-                    <div class="timeline-card">
-
-                        <div class="timeline-year">
-                            {{ $item['year'] }}
-                        </div>
-
-                        <h5 class="timeline-title">
-                            {{ $item['title'] }}
-                        </h5>
-
-                        <p class="timeline-desc">
-                            {{ $item['desc'] }}
-                        </p>
-
-                    </div>
-
-                </div>
-
-                @endforeach
-
-            </div>
-
-        </div>
-    </section>
-
 @endsection

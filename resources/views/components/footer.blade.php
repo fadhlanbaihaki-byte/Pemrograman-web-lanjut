@@ -161,16 +161,16 @@
                     </div>
 
                     <p>
-                        Perusahaan industri karet terpercaya yang menyediakan
-                        berbagai produk karet berkualitas tinggi untuk kebutuhan
+                        Perusahaan industri karet yang menyediakan
+                        berbagai produk karet berkualitas untuk kebutuhan
                         manufaktur, otomotif, dan industri modern di Indonesia.
-                        (entar ganti kalimatnya )
+                        
                     </p>
                 </div>
 
                 <div class="footer-social">
 
-                    <a href="https://wa.me/... (simpen link wa disini)" class="social-icon">
+                    <a href="https://wa.me/0818427665" class="social-icon">
                         <i class="bi bi-whatsapp"></i>
                     </a>
 
@@ -201,11 +201,13 @@
                 </h6>
 
                 <ul class="footer-links">
-                    <li><a href="#">Produk kategori 1</a></li>
-                    <li><a href="#">Produk kategori 2</a></li>
-                    <li><a href="#">Produk kategori 3</a></li>
-                    <li><a href="#">Produk kategori 4</a></li>
-                    <li><a href="#">Produk kategori 5</a></li>
+                    @foreach(\App\Models\Category::take(5)->get() as $cat)
+                        <li>
+                            <a href="{{ url('/produk?category_id=' . $cat->id) }}">
+                                {{ $cat->name }}
+                            </a>
+                        </li>
+                    @endforeach
                 </ul>
 
             </div>
@@ -230,7 +232,7 @@
 
                         <div class="contact-text">
                             Jl. Terusan Awi Bitung No 235/143 B<br>
-                            Bandung, Jawa Barat (kodeposnya lupa)
+                            Bandung, Jawa Barat 40121
                         </div>
                     </div>
 
@@ -248,25 +250,7 @@
                         </div>
 
                         <div class="contact-text">
-                            nomor wa nya 
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="footer-contact-item">
-
-                    <div class="icon-wrap">
-                        <i class="bi bi-envelope-fill"></i>
-                    </div>
-
-                    <div>
-                        <div class="contact-label">
-                            Email
-                        </div>
-
-                        <div class="contact-text">
-                            emailnya belum ada jir
+                            0818-427-665
                         </div>
                     </div>
 
@@ -284,7 +268,7 @@
                         </div>
 
                         <div class="contact-text">
-                            setiap hari keknya 
+                            07.00 - 18.00
                         </div>
                     </div>
 
@@ -324,5 +308,4 @@
         </div>
 
     </div>
-
 </footer>
