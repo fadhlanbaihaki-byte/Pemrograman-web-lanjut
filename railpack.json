@@ -5,3 +5,26 @@
     },
     "buildAptPackages": ["bison", "re2c", "libcurl4-openssl-dev"]
 }
+{
+    "packages": {
+        "php": "8.3"
+    },
+    "buildAptPackages": [
+        "bison",
+        "re2c",
+        "libcurl4-openssl-dev",
+        "libgd-dev",
+        "libpng-dev",
+        "libjpeg-dev",
+        "libfreetype6-dev",
+        "libwebp-dev",
+        "libxml2-dev",
+        "libzip-dev",
+        "libonig-dev",
+        "libreadline-dev",
+        "libpq-dev",
+        "libsqlite3-dev",
+        "libssl-dev",
+        "zlib1g-dev"
+    ]
+}
