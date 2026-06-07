@@ -15,8 +15,8 @@
                 <div class="divider-elegant centered"></div>
 
                 <p class="section-subtitle mx-auto">
-                    Indo Gummi menghadirkan produk karet industri berkualitas tinggi
-                    dengan teknologi modern dan standar produksi terpercaya.
+                    Indo Gummi menyediakan komponen karet industri berkualitas
+                    dengan pengerjaan yang teliti dan hasil cetakan yang dapat diandalkan.
                 </p>
             </div>
 
@@ -29,43 +29,43 @@
                     [
                         'icon' => 'bi-building-fill',
                         'color' => '#4e7d4e',
-                        'title' => 'Pabrik Modern',
-                        'desc' => 'Didukung fasilitas produksi modern untuk menghasilkan produk karet berkualitas tinggi.'
+                        'title' => 'Produksi Mandiri',
+                        'desc' => 'Dikerjakan langsung di bengkel produksi kami sendiri untuk memastikan setiap proses pembuatan terpantau dengan baik.'
                     ],
 
                     [
                         'icon' => 'bi-patch-check-fill',
                         'color' => '#198754',
-                        'title' => 'Kualitas Terjamin',
-                        'desc' => 'Setiap produk melewati proses quality control ketat sesuai standar industri.'
+                        'title' => 'Mutu Terjaga',
+                        'desc' => 'Setiap komponen karet diperiksa secara manual satu per satu untuk memastikan kerapian hasil akhir sebelum dikirim ke pelanggan.'
                     ],
 
                     [
                         'icon' => 'bi-truck',
                         'color' => '#0d6efd',
-                        'title' => 'Distribusi Cepat',
-                        'desc' => 'Pengiriman produk tepat waktu dengan jaringan distribusi luas ke berbagai daerah.'
+                        'title' => 'Pengiriman Fleksibel',
+                        'desc' => 'Kami siap mengirimkan pesanan tepat waktu menggunakan layanan ekspedisi andalan yang menjangkau lokasi wilayah Anda.'
                     ],
 
                     [
                         'icon' => 'bi-gear-fill',
                         'color' => '#dc3545',
-                        'title' => 'Produksi Presisi',
-                        'desc' => 'Menggunakan teknologi presisi untuk memastikan hasil produk konsisten.'
+                        'title' => 'Hasil Presisi & Rapi',
+                        'desc' => 'Proses cetak menggunakan cetakan (molding) yang akurat untuk memastikan dimensi produk pas.'
                     ],
 
                     [
                         'icon' => 'bi-people-fill',
                         'color' => '#f0a500',
-                        'title' => 'Tim Profesional',
-                        'desc' => 'Didukung tenaga ahli berpengalaman di bidang manufaktur dan industri karet.'
+                        'title' => 'Pengalaman di Bidangnya',
+                        'desc' => 'Berbekal pengalaman bertahun-tahun dalam mengolah material karet, kami memahami karakter bahan yang tepat untuk berbagai kebutuhan fungsional.'
                     ],
 
                     [
                         'icon' => 'bi-globe2',
                         'color' => '#6f42c1',
-                        'title' => 'Mitra Industri',
-                        'desc' => 'Dipercaya berbagai perusahaan manufaktur sebagai supplier produk karet.'
+                        'title' => 'Mitra Terpercaya',
+                        'desc' => 'Telah dipercaya oleh berbagai pelaku usaha lokal, bengkel bubut, dan sektor operasional bengkel sebagai penyedia komponen karet andalan.'
                     ],
 
                 ];
@@ -146,55 +146,7 @@
             </div>
 
             {{-- Product Grid --}}
-            @php
-            $featuredProducts = [
-
-                [
-                    'id'=>1,
-                    'slug'=>'rubber-o-ring',
-                    'name'=>'Rubber O Ring',
-                    'category'=>'Produk Industri',
-                    'price'=>'Hubungi Kami',
-                    'short_desc'=>' cincin segel elastomer berbentuk torus (lingkaran) dengan penampang melingkar.',
-                    'image'=>'https://www.rs-online.id/p/rs-pro-nitrile-rubber-o-ring-1-6mm-bore-3-6mm-o-d/1965381/',
-                    'badge'=>'Best'
-                ],
-
-                [
-                    'id'=>2,
-                    'slug'=>'rubber-gasket',
-                    'name'=>'Rubber Gasket',
-                    'category'=>'Komponen Mesin',
-                    'price'=>'Hubungi Kami',
-                    'short_desc'=>'Produk gasket karet tahan panas dan tekanan tinggi.',
-                    'image'=>'https://www.google.com/imgres?q=rubber%20gasket&imgurl=https%3A%2F%2Fwww.deesawalarubber.com%2Fimg%2Fproducts%2Fepdm-flange-rubber-gaskets.webp&imgrefurl=https%3A%2F%2Fwww.deesawalarubber.com%2Fepdm-flange-rubber-gaskets.html&docid=Ta_dfeA2tibHwM&tbnid=SD72gtf2uT_RdM&vet=12ahUKEwjP8aDF2bKUAxWGSGwGHem9M10QnPAOegQIHxAB..i&w=370&h=275&hcb=2&ved=2ahUKEwjP8aDF2bKUAxWGSGwGHem9M10QnPAOegQIHxAB',
-                    'badge'=>'Best'
-                ],
-
-                [
-                    'id'=>3,
-                    'slug'=>'rubber-roll',
-                    'name'=>'Rubber Roll',
-                    'category'=>'Mesin Industri',
-                    'price'=>'Hubungi Kami',
-                    'short_desc'=>'Karet roll industri dengan daya tahan tinggi dan presisi maksimal.',
-                    'image'=>'https://www.google.com/imgres?q=rubber%20roll&imgurl=https%3A%2F%2Fwww.kobeglobal.com%2Fwp-content%2Fuploads%2F2025%2F05%2Fartikell-ruber-roll-2.jpeg&imgrefurl=https%3A%2F%2Fwww.kobeglobal.com%2Frubber-roll-komponen-multifungsi%2F&docid=Toilpj6Pe9avdM&tbnid=Wct5z6so7MRm6M&vet=12ahUKEwjl0N-q2bKUAxWvVmwGHV02BNYQnPAOegQIKhAB..i&w=800&h=533&hcb=2&ved=2ahUKEwjl0N-q2bKUAxWvVmwGHV02BNYQnPAOegQIKhAB',
-                    'badge'=>'New'
-                ],
-
-                [
-                    'id'=>4,
-                    'slug'=>'rubber-seal',
-                    'name'=>'Rubber Seal',
-                    'category'=>'Produk Teknik',
-                    'price'=>'Hubungi Kami',
-                    'short_desc'=>'Seal karet premium untuk kebutuhan manufaktur dan mesin industri.',
-                    'image'=>'https://www.google.com/imgres?q=rubber%20gasket&imgurl=https%3A%2F%2Fwww.deesawalarubber.com%2Fimg%2Fproducts%2Fepdm-flange-rubber-gaskets.webp&imgrefurl=https%3A%2F%2Fwww.deesawalarubber.com%2Fepdm-flange-rubber-gaskets.html&docid=Ta_dfeA2tibHwM&tbnid=SD72gtf2uT_RdM&vet=12ahUKEwjP8aDF2bKUAxWGSGwGHem9M10QnPAOegQIHxAB..i&w=370&h=275&hcb=2&ved=2ahUKEwjP8aDF2bKUAxWGSGwGHem9M10QnPAOegQIHxAB',
-                    'badge'=>'Best'
-                ],
-
-            ];
-            @endphp
+            {{-- $featuredProducts sudah dikirim dari HomeController --}}
 
             <div class="row g-4">
 
@@ -270,8 +222,6 @@
 
     </section>
 
-    {{-- ===== TESTIMONI SECTION ===== --}}
-  
 
 @endsection
 
@@ -306,6 +256,5 @@
         }
 
     }
-
 </style>
 @endpush

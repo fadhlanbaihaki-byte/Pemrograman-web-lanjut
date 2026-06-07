@@ -218,14 +218,14 @@
 
                     <div class="hero-eyebrow">
                         <i class="bi bi-building"></i>
-                        Industri Karet Berkualitas
+                        BENGKEL PRODUKSI KARET
                     </div>
 
                     <h1 class="hero-title">
                         Solusi Produk
                         <span class="highlight">Karet Industri</span><br>
-                        untuk Bisnis<br>
-                        Modern
+                        untuk Kebutuhan Mesin<br>
+                        & Industri
                     </h1>
 
                     <p class="hero-subtitle">
@@ -245,7 +245,7 @@
 
                         </a>
 
-                        <a href="https://wa.me/6281234567890"
+                        <a href="https://wa.me/0818427665"
                            class="btn btn-dark btn-lg"
                            target="_blank">
 
@@ -256,31 +256,7 @@
 
                     </div>
 
-                    {{-- STATS --}}
-                    <div class="hero-stats">
-
-                        <div class="hero-stat-item">
-                            <div class="stat-number">10+</div>
-                            <div class="stat-label">
-                                Tahun Pengalaman
-                            </div>
-                        </div>
-
-                        <div class="hero-stat-item">
-                            <div class="stat-number">100+</div>
-                            <div class="stat-label">
-                                Mitra Industri
-                            </div>
-                        </div>
-
-                        <div class="hero-stat-item">
-                            <div class="stat-number">24/7</div>
-                            <div class="stat-label">
-                                Dukungan Pelanggan
-                            </div>
-                        </div>
-
-                    </div>
+                    
 
                 </div>
 
@@ -294,7 +270,7 @@
                     <div class="hero-image-main">
 
                         <img
-                            src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=900&q=80"
+                            src="{{ asset('images/roll guider.jpg') }}"
                             alt="Indo Gummi"
                         >
 
@@ -308,9 +284,9 @@
                         </div>
 
                         <div>
-                            <div class="number">100%</div>
+                            
                             <div class="label">
-                                Standar Kualitas Industri
+                                Bisa Custom Sesuai Sampel
                             </div>
                         </div>
 
