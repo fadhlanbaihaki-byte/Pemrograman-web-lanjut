@@ -170,7 +170,7 @@
 
                 <div class="footer-social">
 
-                    <a href="https://wa.me/0818427665" class="social-icon">
+                    <a href="https://wa.me/6218427665" class="social-icon">
                         <i class="bi bi-whatsapp"></i>
                     </a>
 
