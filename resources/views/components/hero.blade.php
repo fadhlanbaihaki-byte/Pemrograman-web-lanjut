@@ -245,7 +245,7 @@
 
                         </a>
 
-                        <a href="https://wa.me/0818427665"
+                        <a href="https://wa.me/62818427665"
                            class="btn btn-dark btn-lg"
                            target="_blank">
 

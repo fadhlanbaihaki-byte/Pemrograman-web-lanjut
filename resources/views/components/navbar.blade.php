@@ -159,7 +159,7 @@
                        href="{{ url('/kontak') }}">Kontak</a>
                 </li>
                 <li class="nav-item ms-2">
-                    <a class="nav-cta" href="https://wa.me/0818427665" target="_blank">
+                    <a class="nav-cta" href="https://wa.me/62818427665" target="_blank">
                         <i class="bi bi-whatsapp"></i>
                         <span>Pesan Sekarang</span>
                     </a>

@@ -44,7 +44,7 @@
                         '0818-427-665',
                         'Senin – Sabtu, 08.00 – 17.00'
                     ],
-                    'link'=>'https://wa.me/0818427665',
+                    'link'=>'https://wa.me/62818427665',
                     'link_text'=>'Chat Sekarang'
                 ],
 

@@ -250,7 +250,7 @@
                         </div>
 
                         <div class="contact-text">
-                            0818-427-665
+                            +62 818-427-665
                         </div>
                     </div>
 

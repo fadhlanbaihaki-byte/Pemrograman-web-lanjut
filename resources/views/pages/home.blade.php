@@ -203,7 +203,7 @@
 
                     <div class="col-lg-4 text-lg-end">
 
-                        <a href="https://wa.me/0818427665"
+                        <a href="https://wa.me/62818427665"
                            class="btn-wa"
                            target="_blank">
 
